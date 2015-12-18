@@ -23,16 +23,7 @@ Screenshots
 ### PHP
 ![HTML](screenshots/php.png)
 
-Installation
 ---
-
-This extension requires Brackets 1.3 or newer.
-
-1. Open Brackets
-2. Open the extension manager
-3. Click the Themes tab
-4. Search for ‘Monokai Dark Soda’
-5. Click install
 
 Supported extensions
 ---
@@ -40,7 +31,6 @@ Supported extensions
 * [Brackets-Git](https://github.com/zaggino/brackets-git)
 * [Match Highlighter](https://github.com/gintau/bracket-match-highlighter)
 
-Want more? Open an issue!
 
 License
 ---
