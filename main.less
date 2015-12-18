@@ -1,0 +1,206 @@
+//see: https://github.com/adobe/brackets/wiki/Creating-Themes
+
+// Color variables (appears count calculates by raw css)
+@white_color: #f8f8f2; // Appears 10 times
+@green_color: #A6E22E; // Appears 6 times, original => #1dff00
+@red_color: #f92672; // Appears 5 times
+@dark_grey: #242424; // Appears 4 times
+@beige_color: #FFE792; // Appears 4 times, original => #e6db74
+@grey_color: #3c3f41; // Appears 4 times
+@purple_color: #ae81ff; // Appears 3 times
+@light_grey_color: #767676; // Appears 2 times
+@orange_color: #fd971f; // Appears 2 times
+@light_blue_color: #66d9ef; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 3px; // Appears 3 times
+
+
+.cm-bracket {
+	color:@red_color;
+}
+.cm-keyword {
+	color:@red_color;
+    text-shadow:0 0 10px @red_color;
+    font-style: italic;
+}
+.cm-tag {
+	color:@red_color;
+    text-shadow:0 0 10px @red_color;
+}
+.cm-atom {
+	color:@purple_color;
+}
+.cm-link {
+	color:@purple_color;
+}
+.cm-number {
+	color:@purple_color;
+}
+.cm-operator {
+	color:@white_color;
+}
+.cm-variable {
+	color:@white_color;
+}
+.cm-variable-3 {
+	color:@white_color;
+}
+.cm-attribute,.cm-builtin,.cm-meta,.cm-qualifier {
+	color:@green_color; //original #A2E22E
+    text-shadow:0 0 10px @green_color; //original #A2E22E
+    font-style: italic;
+}
+.cm-string {
+	color:@beige_color;
+}
+.cm-string-2 {
+	color:@beige_color;
+}
+.cm-property {
+	color:@light_blue_color;
+    //text-shadow:0 0 10px @light_blue_color;
+}
+.cm-variable-2 {
+	color:@light_blue_color;
+    text-shadow:0 0 10px @light_blue_color;
+}
+.cm-comment {
+	color:#8c8c8c;
+}
+.cm-def {
+	color:@orange_color;
+}
+.cm-matchhighlight {
+	background:#333333;
+}
+.cm-error {
+	background:@red_color;
+	color:@white_color!important;
+}
+.CodeMirror {
+	background:#000; //original @dark_grey
+	color:@white_color;
+}
+.CodeMirror-scroll {
+	background: #000;
+	color:@white_color; //original @dark_grey
+}
+
+.CodeMirror-gutters {
+	background:@dark_grey;
+}
+.CodeMirror-focused {
+	.CodeMirror-activeline {
+		.CodeMirror-gutter-elt {
+			background:@grey_color;
+			color:@white_color;
+		}
+	}
+	.CodeMirror-activeline-background {
+		background:@grey_color;
+	}
+	.CodeMirror-selected {
+		background:@beige_color;
+		color:@dark_grey;
+	}
+}
+.inline-widget {
+	.CodeMirror-gutter-elt {
+		background:@grey_color;
+	}
+}
+.CodeMirror-linenumber {
+	color:@light_grey_color;
+}
+.CodeMirror-cursor {
+	border-left:1px solid @white_color !important;
+}
+.CodeMirror-selected {
+	background:@grey_color;
+	opacity:.23;
+}
+.CodeMirror-matchingbracket {
+	background:0 0!important;
+	color:@green_color!important;
+	font-weight:700;
+	text-shadow:0 0 10px @green_color;
+}
+.CodeMirror-nonmatchingbracket {
+	background:@red_color!important;
+	color:@white_color!important;
+}
+.CodeMirror-matchingtag {
+	background:rgba(255,255,255,.15);
+}
+.CodeMirror-overwrite {
+	.CodeMirror-cursor {
+		border-bottom:1px solid @white_color;
+		border-left:none!important;
+	}
+}
+.CodeMirror-searching {
+	background:@beige_color;
+}
+.searching-current-match {
+	background:@orange_color;
+}
+.CodeMirror-foldgutter-open {
+	padding-top:1px;
+	&:after {
+		color:@light_grey_color;
+		content:"˅";
+		font-size:1.32em;
+	}
+}
+.CodeMirror-foldgutter-folded {
+	padding-top:2px;
+	&:after {
+		background:0 0!important;
+		color:@green_color!important;
+		content:"+";
+		font-size:1.3em;
+		font-weight:700;
+		text-shadow:0 0 10px @green_color;
+	}
+}
+.CodeMirror-foldmarker {
+	background:0 0;
+	border-radius:.75em;
+	border:0;
+	color:@green_color!important;
+	display:inline-block;
+	font-size:.75em;
+	padding:0 2px;
+	text-shadow:0 0 10px @green_color;
+	&:after {
+		content:'\2022\2022\2022';
+		position:relative;
+		top:1px;
+	}
+}
+.ico-cssColorPreview {
+	border-radius:50%;
+	height:6px;
+	margin-bottom:2px;
+	width:6px;
+}
+.brackets-git-gutter-added {
+	width:@width0;
+}
+.brackets-git-gutter-modified {
+	width:@width0;
+}
+.brackets-git-gutter-removed {
+	width:@width0;
+}
+
+.cm-m-css.cm-attribute, .cm-m-css.cm-builtin, .cm-m-css.cm-meta, .cm-m-css.cm-qualifier {
+    text-shadow:0 0 0px @green_color; //original #A2E22E
+    font-style: normal;
+}
+.cm-m-css.cm-keyword{
+    text-shadow: 0 0 0px;
+    color: #fff000;
+}
+
