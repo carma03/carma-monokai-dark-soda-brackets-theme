@@ -1,7 +1,7 @@
 Carma - Monokai Dark Soda
 ===
 
-Theme for Brackets editor. Based on Monokai Dark Soda Theme
+Theme for Brackets editor. Based on [Monokai Dark Soda Theme](https://github.com/rainje/Monokai-Dark-Soda).
 
 Monokai Dark Soda
 ===
